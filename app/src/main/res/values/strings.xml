@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Quis</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="masukkan_nim">Masukkan NIM</string>
+    <string name="masukkan_program_studi">Masukkan Program Studi</string>
+    <string name="simpan">Simpan</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+</resources>
