@@ -1,31 +1,24 @@
-package com.syaviraindahmaryam.myquis.Dao;
+package com.syaviraindahmaryam.myquis.Model;
 
-import com.syaviraindahmaryam.myquis.MainActivity;
-import com.syaviraindahmaryam.myquis.Model.Mahasiswa;
+import com.syaviraindahmaryam.myquis.Student;
 
-import java.util.List;
-
-@Entity(tableName = "mahasiswa")
-public class MahasiswaDao {
-
-    @PrimaryKey(autoGenerate = true)
+public class StudentViewModel {
     private int id;
     private String nama;
     private String nim;
     private String prodi;
 
-    // Constructor, getter, and setter methods
-    public MahasiswaDao(int id, String nama, String nim, String prodi) {
+    // Constructors
+    public StudentViewModel() {}
+
+    public StudentViewModel(int id, String nama, String nim, String prodi) {
         this.id = id;
         this.nama = nama;
         this.nim = nim;
         this.prodi = prodi;
     }
 
-    public MahasiswaDao(MainActivity mainActivity) {
-
-    }
-
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -58,13 +51,9 @@ public class MahasiswaDao {
         this.prodi = prodi;
     }
 
-    public List<MahasiswaDao> getAllMahasiswa() {
-        return null;
+    public void update(Student currentStudent) {
     }
 
-    public void update(Mahasiswa mahasiswa) {
-    }
-
-    public void deleteById() {
+    public void delete(Student currentStudent) {
     }
 }

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="namaEditText" type="id" />
+    <item name="nama" type="id" />
+    <item name="nim" type="id" />
+    <item name="prodi" type="id" />
+    <item name="lv_produk" type="id" />
+    <item name="fab_Tambah" type="id" />
+    <item name="button_tambah" type="id" />
 </resources>

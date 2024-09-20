@@ -1,22 +1,25 @@
-package com.syaviraindahmaryam.myquis.Model;
+package com.syaviraindahmaryam.myquis;
 
-public class Mahasiswa {
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import java.io.Serializable;
+
+@Entity(tableName = "students")
+public class Student implements Serializable {
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String nama;
     private String nim;
     private String prodi;
 
-    // Constructors
-    public Mahasiswa() {}
-
-    public Mahasiswa(int id, String nama, String nim, String prodi) {
-        this.id = id;
+    // Constructor
+    public Student(String nama, String nim, String prodi) {
         this.nama = nama;
         this.nim = nim;
         this.prodi = prodi;
     }
 
-    // Getters and Setters
+    // Getter dan Setter
     public int getId() {
         return id;
     }
@@ -47,5 +50,19 @@ public class Mahasiswa {
 
     public void setProdi(String prodi) {
         this.prodi = prodi;
+    }
+
+    public int getName() {
+        return 0;
+    }
+
+    public String getStudyProgram() {
+        return null;
+    }
+
+    public void setName(String name) {
+    }
+
+    public void setStudyProgram(String program) {
     }
 }
